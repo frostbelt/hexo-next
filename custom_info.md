@@ -18,5 +18,25 @@ ssh-add ~/.ssh/id_rsa_work
 
 ### 配置.ssh/config
 ```
-
+Host github.com
+  HostName github.com
+  IdentityFile ~/.ssh/id_rsa
+ 
+Host github_work
+  HostName github.com
+  IdentityFile ~/.ssh/id_rsa_work
 ```
+
+### 修改本项目作者名、邮件
+```
+git config user.name "your-name"
+git config user.email "your-email-address"
+```
+
+### 使用 github.com 别名 github_work 提交代码
+```
+git remote remove origin
+git remote add origin git@github_work:xxxx/xxx.git
+```
+
+
