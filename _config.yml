@@ -133,7 +133,8 @@ toc:
   enable: true
 
   # Automatically add list number to toc.
-  number: true
+  # edit by frostbelt, 不自动生成文章列表序号
+  number: false
 
   # If true, all words will placed on next lines if header width longer then sidebar width.
   wrap: false
