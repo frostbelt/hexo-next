@@ -77,10 +77,11 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
-#scheme: Mist
-#scheme: Pisces
-#scheme: Gemini
+# scheme: Muse
+scheme: Mist # edit by frostbelt
+# 只有后两种，支持 sidebar position，但更喜欢 Mist
+# scheme: Pisces
+# scheme: Gemini
 
 
 # ---------------------------------------------------------------
@@ -147,18 +148,23 @@ toc:
 
 sidebar:
   # Sidebar Position, available value: left | right
+  # next 主题不支持
   position: left
-  #position: right
+  # position: right
 
   # Sidebar Display, available value:
   #  - post    expand on posts automatically. Default.
   #  - always  expand for all pages automatically
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  Totally remove sidebar including sidebar toggle.
-  display: post
-  #display: always
-  #display: hide
-  #display: remove
+  # 在有目录的页面显示
+  # display: post
+  # 在所有页面中显示
+  # display: always
+  # 在所有页面中隐藏，可手动展开 edit by frostbelt
+  display: hide 
+  # 完全移除
+  # display: remove
 
   # Sidebar offset from top menubar in pixels.
   offset: 12
@@ -189,6 +195,8 @@ excerpt_description: true
 
 # Automatically Excerpt. Not recommend.
 # Please use <!-- more --> in the post to control excerpt accurately.
+# edit by frostbelt
+# 既然不推荐自动折叠，还是用 <!-- more --> 吧 
 auto_excerpt:
   enable: false
   length: 150
