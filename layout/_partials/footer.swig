@@ -1,7 +1,3 @@
-{### edit by frostbelt ###}
-{### 本站访问量 ###}
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
 <div class="copyright" >
   {% set current = date(Date.now(), "YYYY") %}
   &copy; {% if theme.since and theme.since != current %} {{ theme.since }} - {% endif %}
@@ -10,13 +6,15 @@
     <i class="fa fa-{{ theme.authoricon }}"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">{{ config.author }}</span>
+  {### edit by frostbelt ###}
   <!-- 七牛云的 js 404 了 -->
-  <span style="display:none;">
+  <!--
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     &nbsp;|&nbsp;<i class="fa fa-user-md"></i>
     <span id="busuanzi_container_site_pv">
       本站访问量:<span id="busuanzi_value_site_pv"></span>
     </span>
-  </span>
+  -->
   <!-- Default Statcounter code for frostbelt's home https://frostbelt.github.io/
   -->
   <script type="text/javascript">
