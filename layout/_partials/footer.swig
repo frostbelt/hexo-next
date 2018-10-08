@@ -7,6 +7,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">{{ config.author }}</span>
   {### edit by frostbelt ###}
+  {##
   <!-- 七牛云的 js 404 了 -->
   <!--
     <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -15,6 +16,9 @@
       本站访问量:<span id="busuanzi_value_site_pv"></span>
     </span>
   -->
+  ##}
+  {##
+  <!-- statcounter 是收费的 -->
   <!-- Default Statcounter code for frostbelt's home https://frostbelt.github.io/
   -->
   <script type="text/javascript">
@@ -32,6 +36,11 @@
   class="statcounter" src="//c.statcounter.com/11842910/0/eb1ac598/0/" alt="Web
   Analytics Made Easy - StatCounter"></a></div></noscript>
   <!-- End of Statcounter Code -->
+  ##}
+  {##
+    flagcounter : https://s05.flagcounter.com/index.html
+  ##}
+  <a href="https://info.flagcounter.com/LJNa"><img src="https://s05.flagcounter.com/mini/LJNa/bg_F5F5F5/txt_999999/border_F5F5F5/flags_0/" class="flagcounter" alt="Flag Counter" border="0"></a>
 </div>
 
 <div class="theme-info">
