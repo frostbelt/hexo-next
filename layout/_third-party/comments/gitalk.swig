@@ -3,6 +3,7 @@
     {% if page.comments %}
       {## 还是用官方的好，会自动更新 ##}
       <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+      <script src="/js/md5.js"></script>
       <script type="text/javascript">
         var gitalk = new Gitalk({
           clientID: '{{theme.gitalk.clientID}}',
@@ -10,8 +11,10 @@
           repo: '{{theme.gitalk.repo}}',
           owner: '{{theme.gitalk.owner}}',
           admin: '{{theme.gitalk.admin}}'.split(','),
-          // id: location.pathname,     // 超长会报错，使用 location.pathname 需要 md5 下
-          id: '{{ page.date }}',
+          // 如果使用 location.pathname，md5 下，否则超长会报错
+          id: md5(location.pathname),
+          // 使用 page.date 也可以
+          // id: '{{ page.date }}',
           pagerDirection: '{{theme.gitalk.pagerDirection}}',
           distractionFreeMode: false
         })
