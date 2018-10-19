@@ -10,7 +10,8 @@
           repo: '{{theme.gitalk.repo}}',
           owner: '{{theme.gitalk.owner}}',
           admin: '{{theme.gitalk.admin}}'.split(','),
-          id: location.pathname,    // id: '{{ page.date }}',
+          // id: location.pathname,     // 超长会报错，使用 location.pathname 需要 md5 下
+          id: '{{ page.date }}',
           pagerDirection: '{{theme.gitalk.pagerDirection}}',
           distractionFreeMode: false
         })
