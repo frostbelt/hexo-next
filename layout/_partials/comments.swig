@@ -30,7 +30,8 @@
       <div id="SOHUCS"></div>
     {% elseif theme.gitalk.enable %}
       <div id="gitalk-container"></div>
-      <link rel="stylesheet" href="/plugins/gitalk/gitalk.css">
+      {## 还是用官方的好，会自动更新 ##}
+      <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
     {% endif %}
   </div>
 {% endif %}

@@ -1,7 +1,8 @@
 {% if not (theme.duoshuo and theme.duoshuo.shortname) and not theme.duoshuo_shortname %}
   {% if theme.gitalk.enable %}
     {% if page.comments %}
-      <script src="/plugins/gitalk/gitalk.js"></script>
+      {## 还是用官方的好，会自动更新 ##}
+      <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
       <script type="text/javascript">
         var gitalk = new Gitalk({
           clientID: '{{theme.gitalk.clientID}}',
