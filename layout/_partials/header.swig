@@ -33,7 +33,7 @@
 </div>
 
 <nav class="site-nav">
-  {% set hasSearch = theme.swiftype_key || config.algolia || theme.algolia_search.enable || theme.tinysou_Key || theme.local_search.enable %}
+  {% set hasSearch = theme.swiftype_key || theme.algolia_search.enable || theme.tinysou_Key || theme.local_search.enable %}
 
   {% if theme.menu %}
     <ul id="menu" class="menu">
@@ -54,8 +54,6 @@
           {% if theme.swiftype_key %}
             <a href="javascript:;" class="st-search-show-outputs">
           {% elseif theme.local_search.enable || theme.algolia_search.enable %}
-            <a href="javascript:;" class="popup-trigger">
-          {% elseif config.algolia %}
             <a href="javascript:;" class="popup-trigger">
           {% endif %}
             {% if theme.menu_icons.enable %}
