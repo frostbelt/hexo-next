@@ -131,26 +131,11 @@
   };
 </script>
 {#
-  github 上没有生效，但应该是 github 的问题 20181022，等过两天再看看是否已生效
-  algolia: {
-    applicationID: '{{ theme.algolia.applicationID }}',
-    apiKey: '{{ theme.algolia.apiKey }}',
-    indexName: '{{ theme.algolia.indexName }}',
-    hits: {{ theme.algolia_search.hits | json_encode }},
-    labels: {{ theme.algolia_search.labels | json_encode }}
-  }
-
-  algolia: {
-    applicationID: 'ZJC7ALNT9K',
-    apiKey: 'fdd2a802d786da2de761cca3e8ec1f17',
-    indexName: 'frostbeltshome',
-    hits: {per_page : 10},
-    labels: {
-      hits_empty: "没有找到与 ${query} 相关的内容",
-      hits_stats: "${hits} 条相关记录，共耗时 ${time}ms",
-      input_placeholder: "请输入关键字"
-    }
-  }
+  algolia 本地已生效，github 上没有生效，后来发现是 github pages 服务出问题了.. 
+  October 22, 2018
+  12:12 中国标准时间
+  We are continuing work to repair a data storage system for GitHub.com. You may see inconsistent results during this process.
+  等等看
 #}
 
 {# Canonical, good for google search engine (SEO) : https://support.google.com/webmasters/answer/139066 #}
